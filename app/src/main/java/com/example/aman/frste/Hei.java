@@ -10,16 +10,19 @@ import android.widget.Toast;
 
 public class Hei extends Activity {
 
+    Integer count;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hei);
+        count = 1;
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Toast.makeText(this, "Hei", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Hei "(count++), Toast.LENGTH_SHORT).show();
     }
 
     @Override
