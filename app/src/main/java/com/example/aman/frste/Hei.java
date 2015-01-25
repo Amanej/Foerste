@@ -18,6 +18,7 @@ public class Hei extends Activity {
 
     @Override
     protected void onResume() {
+        super.onResume();
         Toast.makeText(this, "Hei", Toast.LENGTH_SHORT).show();
     }
 
