@@ -1,3 +1,4 @@
+
 package com.example.aman.frste;
 
 import android.app.Activity;
@@ -13,11 +14,12 @@ public class Hei extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hei);
-
-        Toast.makeText(this, "Hei", Toast.LENGTH_SHORT).show();
-
     }
 
+    @Override
+    protected void onResume() {
+        Toast.makeText(this, "Hei", Toast.LENGTH_SHORT).show();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
