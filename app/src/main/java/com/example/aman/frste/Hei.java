@@ -22,7 +22,7 @@ public class Hei extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        Toast.makeText(this, "Hei "(count++), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Hei "+(count++), Toast.LENGTH_SHORT).show();
     }
 
     @Override
